@@ -73,7 +73,7 @@ class TransformData {
 ```
 
 This class allows to process the data without risking halting the main process for too long. Without `setTimeout()` the main process can stop processing the tasks or even cause `RangeError: Maximum call stack size exceeded` error.
-I believe that this could be optimized for the developer experience by allows to `await` for a specific amount of time rather than a promise is resolved:
+I believe that this could be optimized for the developer experience by allowing to `await` for a specific amount of time rather than a promise:
 
 ```javascript
 class TransformData {
